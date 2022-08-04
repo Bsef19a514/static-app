@@ -10,16 +10,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* align-content: center; */
 }
 .card{
-   
+   /* border: 1px solid red; */
     width: 400px;
     height: 500px;
     border-radius: 10px;
     box-shadow: 5px 10px 20px grey;
     position: fixed;
-    top: 15%;
+    top: 80px;
+    
 }
 .backward{
     z-index: -1;
@@ -47,8 +47,8 @@ body{
 }
 
 .form input{
-    width: 90%;
-    height: 25px;
+    width: 85%;
+    height: 30px;
     border: 1px solid black ;
     border-radius: 5px;
     box-shadow: 2px 1px 5px gray;
@@ -63,7 +63,7 @@ body{
     float: right;
     font-size: 15px;
     margin-top: 7px;
-    margin-right: 25px;
+    margin-right: 60px;
 }
 
 #btn{
@@ -86,17 +86,23 @@ body{
 .footer{
     width: 80%;
     margin-left: 11%;
-    position: absolute;
-    bottom: 2%;
+    position: relative;
+    bottom: -2%;
+}
+#loginFooter{
+    bottom: -4%;
 }
 
 /* -------media queries for signup page */
-@media screen and (max-width:400px){
+@media screen and ( max-width:500px){
+    .container{
+        border: 1px solid red;
+        align-content: flex-start;
+        align-items:flex-start;
+    }
     .card{
-        /* border: 1px solid red; */
-        width: 95%;
+        width: 90%;
         height: 500px;
-        margin: 20vw auto;
     }
 }
 
@@ -104,9 +110,6 @@ body{
 #loginCard{
     height: 400px;
     width: 380px;
-    position: fixed;
-    top: 15%;
-    
 }
 
 #loginCard h1{
@@ -119,17 +122,9 @@ body{
     margin-top: 40px;
 }
 
-#loginCard .footer{
-  
-    position: absolute;
-    bottom: 2%;
-}
-
-@media screen and (max-width:400px){
+@media screen and ( max-width:500px){
     #loginCard{
-        height: 400px;
         width: 90%;
-        margin: 25vw auto;
     }
     
 }

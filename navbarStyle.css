@@ -5,10 +5,10 @@
 
 .navbar{
 
-   
+   /* position: fixed; */
     background-color: black;
     color: white;
-    height: 50px;
+    height: 70px;
     font-family: sans-serif;
     display: flex;
     flex-flow: row nowrap;
@@ -47,16 +47,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: padding-box;
-    
-    
     flex-basis: 100px;
 }
 .navbar a{
     flex-grow: 1;
     text-decoration: none;
     color: white;
-    padding-top: 15px;
-    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
 .navbar a:hover{
@@ -70,19 +69,19 @@
 @media screen and ( max-width:500px){
     .hamburger{
         display: initial;
-        font-size: 20px;
+        font-size: 30px;
         padding-top: 10px;
         padding-right: 10px;
     }
     .navbar{
         display: block;
-        height:50px;
+        height:70px;
         transition:height .1s linear;
         
     }
     .navbar-left{
         justify-content: space-between;
-        height: 49px;
+        height: 65px;
     }
     .navbar-center{
         display: none;
@@ -95,18 +94,22 @@
 
 .navbarOnclick{
    transition:height .1s linear;
-    height:249px;
+    height:fit-content;
+    padding-bottom: 30px;
 }
 
 .navbar-centerOnclick{
     display: block;
+    /* padding: 20px auto; */
 }
 
 .navbar-rightOnclick{
     display: block;
+    padding: 20px auto;
 }
 .itemsOnclick{
     display: block;
-    padding-top: 5px;
-    padding-bottom: 7px;
+    padding: 10px 0px;
+    /* padding-top: 5px;
+    padding-bottom: 7px; */
 }
